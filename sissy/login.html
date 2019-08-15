@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <title>用户登录</title>
+<script src="http://s3.pstatp.com/cdn/expire-1-M/twitter-bootstrap/3.3.7/js/bootstrap.js" type="application/javascript"></script>
+<link href="http://s2.pstatp.com/cdn/expire-1-M/twitter-bootstrap/3.3.7/css/bootstrap.css" type="text/css" rel="stylesheet" />
+<script src="http://s2.pstatp.com/cdn/expire-1-M/jquery/3.2.1/jquery.js" type="application/javascript"></script>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        #from
+        {
+            background-color: aliceblue;
+            width:500px;
+            left:35%;
+            top:200px;
+            position:absolute;
+        }
+        .mycenter
+        {
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            width: 500px;
+            padding: 5%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        .mycenter mysign
+        {
+            width: 440px;
+        }
+        .mycenter input, checkbox, button
+        {
+            margin-top: 2%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .mycheckbox
+        {
+            margin-top: 10px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+            height: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="from" action="login.php" method="POST">
+    <div class="mycenter">
+        <div class="mysign">
+            <div class="col-lg-11 text-center text-info">
+                <h2>
+                    请登录</h2>
+            </div>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="username" name="username" placeholder="请输入账户名" />
+            </div>
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-10">
+                <input type="password" class="form-control" id="password" name="password" placeholder="请输入密码"/>
+            </div>
+            <div class="col-lg-10">
+            </div>
+
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-10">
+                <input type="submit" id="btn" class="btn btn-success col-lg-12" value="登录">
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+
+
+
+</html>
